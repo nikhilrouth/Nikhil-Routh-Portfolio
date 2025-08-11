@@ -46,3 +46,43 @@
   transform: translateY(-2px);
   text-shadow: 0 2px 6px rgba(140, 140, 142, 0.4);
 }
+
+/* Tablet view adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+
+  .navbar ul {
+    gap: 1.5rem;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    height: 50px;
+    margin-bottom: -20px;
+  }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .navbar ul {
+    gap: 1rem;
+  }
+
+  .navbar a {
+    font-size: 0.9rem;
+  }
+
+  .logo img {
+    height: 45px;
+    margin-bottom: -15px;
+  }
+}
