@@ -17,7 +17,7 @@ export default function App() {
     I build scalable, high-performance applications that deliver measurable business impact, from enterprise-grade microservices to AI-powered platforms. My work blends clean, maintainable code with a strong focus on user experience and product value.
   </p>
   <div className="hero-buttons">
-    <a href="#projects" className="btn primary">View Projects</a>
+    
     <a
       href={ResumePDF}
       className="btn secondary"
@@ -28,6 +28,25 @@ export default function App() {
     </a>
     
   </div>
+ <a
+  href="#about"
+  style={{
+    display: "block",
+    textAlign: "center",
+    marginTop: "2rem",
+    opacity: 0.5,
+    fontStyle: "italic",
+    fontWeight: "bold",
+    fontSize: "1rem",
+    color: "inherit",
+    textDecoration: "none",
+    cursor: "pointer",
+    animation: "fadeMoveUp 4s ease-in-out infinite",
+  }}
+>
+  Scroll for more
+</a>
+  
 </section>
 
       {/* About Section */}
