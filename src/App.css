@@ -36,10 +36,8 @@ h1, h2, h3 {
   text-align: center;
   padding: 6rem 1rem;
  
-  /* background: linear-gradient(90deg, #002444, #8b5cf6); */
-  background: 
-    linear-gradient(90deg, rgba(4, 1, 29, 0.7), rgba(75, 81, 255, 0.7)),
-    url('src/images/2.png');
+  background: linear-gradient(90deg, #002444, #8b5cf6);
+  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
