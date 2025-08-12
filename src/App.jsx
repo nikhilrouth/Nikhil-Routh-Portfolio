@@ -8,9 +8,16 @@ import Navbar from "./Navbar";
 export default function App() {
   return (
     <div className="app" >
-      <Navbar />
+      <Navbar  />
       {/* Hero Section */}
   <section className="hero" id="home">
+   
+  {/* Floating badge */}
+  <div className="open-to-work-badge" >
+    <span className="dot"></span>
+    <span>Open to Work</span>
+  </div>
+
   <h1 className="hero-title">Nikhil Routh</h1>
   <h2 className="hero-subtitle"><strong>Software Engineer | Full-Stack & Cloud Solutions | 5+ Years Experience</strong></h2>
   <p className="hero-pitch">
@@ -28,6 +35,8 @@ export default function App() {
     </a>
     
   </div>
+
+ 
  <a
   href="#about"
   style={{
@@ -182,6 +191,13 @@ export default function App() {
         </a>
       </div>
     </section>
+
+    <footer className="footer">
+  <p>© {new Date().getFullYear()} Nikhil Routh. All rights reserved.</p>
+</footer>
     </div>
+
+    
   );
+  
 }

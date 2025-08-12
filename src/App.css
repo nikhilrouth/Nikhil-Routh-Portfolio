@@ -340,14 +340,14 @@ h1, h2, h3 {
   align-items: center;
   gap: 0.8rem;
   color: #4c1d95;
-  font-weight: 600;
-  font-size: 1.1rem;
+  font-weight: bold;
+  font-size: 1.0rem;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .contact-link:hover {
-  color: #1e40af;
+  color: #3157d3;
 
 
 }
@@ -514,4 +514,79 @@ html {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Top-right badge */
+.open-to-work-badge {
+  position: fixed;
+  top: 0.5rem;
+  right: 2rem;
+  background: #1a0f48e5;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(27, 39, 121, 0.2);
+  z-index : 1000;
+  opacity: 1;
+}
+
+.open-to-work-badge .dot {
+  height: 10px;
+  width: 10px;
+  background-color: lime;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  animation: blink 5s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+@media (max-width: 768px) {
+  .open-to-work-badge {
+    top: 3.2rem;
+    right: 0.3rem;
+    padding: 0.4rem;
+    font-size: 0;           /* hide text */
+    width: 20px;            /* keep a small clickable area */
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: font-size 0.3s ease, padding 0.3s ease, width 0.3s ease;
+  }
+
+  .open-to-work-badge:hover {
+    font-size: 1rem;        /* reveal text on hover */
+    padding: 0.4rem 1rem;
+    width: auto;
+  }
+
+  /* keep the dot visible always */
+  .open-to-work-badge .dot {
+    height: 10px;
+    width: 10px;
+    background-color: lime;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    animation: blink 5s infinite;
+    display: inline-block;
+  }
+}
+
+.footer {
+  width: 100%;
+  padding: 0rem 0rem;
+  background: #f7fafc; /* or your preferred footer background */
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #1f0f49;
+  
+  z-index: 1000;
 }
