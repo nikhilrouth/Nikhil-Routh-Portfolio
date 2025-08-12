@@ -1,13 +1,14 @@
 body {
   margin: 0;
   
-  background: #f9fafb;
+
   color: #222;
   min-width: 320px;
   min-height: 100vh;
   display: grid;
   place-items: center;
-  background: #f9fafb;
+  background: #f9fafb; 
+  
   
 }
 
