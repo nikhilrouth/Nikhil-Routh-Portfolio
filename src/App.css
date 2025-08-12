@@ -596,3 +596,15 @@ html {
   
   z-index: 1000;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero::before {
+    background: rgba(0, 0, 0, 0.15); /* lighter overlay */
+  }
+}
